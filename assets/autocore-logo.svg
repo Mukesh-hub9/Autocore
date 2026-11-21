@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none" role="img" aria-label="AUTOCORE Marque Crest">
+  <defs>
+    <!-- Deep Obsidian Carbon Shield Gradient -->
+    <linearGradient id="badge-carbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b2a" />
+      <stop offset="40%" stop-color="#0e121c" />
+      <stop offset="100%" stop-color="#07090f" />
+    </linearGradient>
+
+    <!-- Titanium Bevel Outer Border -->
+    <linearGradient id="badge-titanium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75" />
+      <stop offset="30%" stop-color="#94a3b8" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Electric Apex Sapphire-to-Cyan Gradient -->
+    <linearGradient id="badge-electric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+
+    <!-- Glowing Core Accent -->
+    <linearGradient id="badge-glow-core" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Ambient Shadow and Glow Filter -->
+    <filter id="badge-glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="50" cy="50" r="42" fill="url(#badge-electric)" opacity="0.15" filter="url(#badge-glow)" />
+
+  <!-- 1. Master Aerodynamic Shield (Outer Perimeter) -->
+  <path d="M50 7 L86 19 L81 58 L50 93 L19 58 L14 19 Z" 
+        fill="url(#badge-carbon)" 
+        stroke="url(#badge-titanium)" 
+        stroke-width="2.2" 
+        stroke-linejoin="round" />
+
+  <!-- Inner Recessed Bevel -->
+  <path d="M50 12 L80 22 L76 55 L50 86 L24 55 L20 22 Z" 
+        stroke="rgba(255, 255, 255, 0.08)" 
+        stroke-width="1" 
+        fill="none" />
+
+  <!-- 2. Dual Velocity Aero Wings (Downforce and Lean-Angle Dynamics) -->
+  <!-- Left Aero Wing -->
+  <path d="M26 27 L45 27 L38 52 L23 42 Z" 
+        fill="url(#badge-electric)" 
+        opacity="0.9" />
+  <path d="M26 46 L42 46 L34 68 L24 56 Z" 
+        fill="url(#badge-electric)" 
+        opacity="0.75" />
+
+  <!-- Right Aero Wing (Mirrored) -->
+  <path d="M74 27 L55 27 L62 52 L77 42 Z" 
+        fill="url(#badge-electric)" 
+        opacity="0.9" />
+  <path d="M74 46 L58 46 L66 68 L76 56 Z" 
+        fill="url(#badge-electric)" 
+        opacity="0.75" />
+
+  <!-- 3. Central Titanium Apex Spear / Crankshaft Alignment Spine -->
+  <polygon points="50,18 56,36 53,74 50,82 47,74 44,36" 
+           fill="url(#badge-glow-core)" 
+           filter="url(#badge-glow)" />
+
+  <!-- Apex Heart Core Diamond (High-Voltage EV Flux and Combustion Ignition) -->
+  <polygon points="50,38 57,48 50,58 43,48" 
+           fill="#ffffff" />
+  <polygon points="50,41 54,48 50,55 46,48" 
+           fill="#06b6d4" />
+
+  <!-- Precision Telemetry Caliper Ticks -->
+  <line x1="38" y1="48" x2="43" y2="48" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="57" y1="48" x2="62" y2="48" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="50" y1="20" x2="50" y2="28" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" />
+</svg>
